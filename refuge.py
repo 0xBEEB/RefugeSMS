@@ -1,10 +1,10 @@
-from flask import Flask, request
+from flask import Flask, request, redirect
 import twilio.twiml
 from models import Message
 from commands import commands
 
 
-SUPER_SECRET_KEY = "MySuperSercretKey"
+SUPER_SECRET_KEY = "MySuperSecretKey"
 
 app = Flask(__name__, static_url_path='')
 
