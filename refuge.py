@@ -38,7 +38,7 @@ def refuge():
     if msg is None or msg.from_number is None:
         return commands['unknown'](message)
 
-    return handleMessage(message)
+    return handleMessage(msg)
 
 
 @app.route("/robots.txt", methods=['GET'])

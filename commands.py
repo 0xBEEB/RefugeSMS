@@ -33,10 +33,10 @@ def handleSearch(message):
     restrooms = searchForRestroom(query)
 
     if len(restrooms) < 1:
-        return handleNoneFound()
+        return handleNoneFound("")
 
-    restroom = restrooms[0]
-    return restroom(restroom)
+    r = restrooms[0]
+    return restroom(r)
 
 def handleHelp(message, commandList):
     """HELP - list of commands"""
